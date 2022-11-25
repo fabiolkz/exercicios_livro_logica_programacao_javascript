@@ -1,0 +1,1 @@
+Elaborar um programa que leia 2 notas de um aluno em uma disciplina. Calcule e informe a média das notas.
