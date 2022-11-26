@@ -8,6 +8,16 @@ const promoRevenda = () => {
     let veiculo = inVeiculo.value;
     let price = inPrice.value;
 
+    if( veiculo == "" ) {
+        alert('Insira o nome do veiculo!');
+        inVeiculo.focus();
+        return;
+    } else if ( price == 0 ) {
+        alert('Insira o valor do veiculo!');
+        inPrice.focus();
+        return;
+    }
+
     let entrada = price / 2;
     let parcelas = entrada / 12;
 
