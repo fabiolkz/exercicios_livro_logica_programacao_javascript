@@ -1,0 +1,2 @@
+Uma farmácia está com uma promoção - Na compra de duas unidades de um mesmo medicamento, o cliente recebe como desconto os centavos do valor total.
+Elaborar um programa que leia a descrição e preço de um medimento. Informe o valor do protudo na promoção.
