@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de IMC</title>
+</head>
+<body>
+    
+    <style>
+        
+        input {
+            display: block;
+            margin: 10px;
+        }
+
+        input[type="radio"] {
+            display: inline;
+        }
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+        appearance: none;
+        }
+
+    </style>
+
+    <h1>Vamos Calcular seu peso Ideal?</h1>
+
+    <form>
+        <label>
+            Nome:
+            <input type="text" id="inNome" placeholder="Insira seu nome">
+        </label>
+        <label>
+            Sexo: 
+            <input type="radio" name="sexo" id="rdMasculino"> Masculino
+            <input type="radio" name="sexo" id="rdFeminino"> Feminino
+        </br></label>
+            Altura:
+        <input type="number" id="inAltura" placeholder="Insira sua altura">
+        <input type="button" value="Calcular Peso Ideal" id="btCalc">
+        <input type="button" value="Limpar Campos" id="btLimpa">
+    </form>
+
+    <h3 id="outResposta"></h3>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
