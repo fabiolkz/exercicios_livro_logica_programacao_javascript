@@ -1,0 +1,1 @@
+Elaborar um programa que leia um número. Informe se ele é par ou impar!
