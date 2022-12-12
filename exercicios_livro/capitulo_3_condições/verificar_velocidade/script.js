@@ -17,12 +17,16 @@ const verificarVelocidade = () => {
     }
 
 
+    let velocidadeExcedida = (velocidadeCondutor - velocidadePermitida);
+
+
+
     if (velocidadeCondutor <= velocidadePermitida) {
         outResposta.textContent = 'Sem Multa';
     } else if (velocidadeCondutor <= (velocidadePermitida + (velocidadePermitida * 0.2))) {
-        outResposta.textContent = 'Multa Leve';
+        outResposta.textContent = `Multa Leve pois voce excedeu ${velocidadeExcedida} km/h`;
     } else {
-        outResposta.textContent = 'Multa Grave';
+        outResposta.textContent = `Multa Grave pois voce excedeu ${velocidadeExcedida} km/h`;
     }
 
 }
