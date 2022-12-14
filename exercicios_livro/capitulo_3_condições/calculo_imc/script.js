@@ -46,3 +46,17 @@ const limparCampos = () => {
 
 let btLimpa = document.querySelector('#btLimpa');
 btLimpa.addEventListener('click', limparCampos);
+
+
+/* TENTANDO FAZER UM BOTAO DE SCROLL UP */ 
+
+const scrollUp = () => {
+
+    if (scrollY > 0 ) {
+        window.scrollTo(0,0);
+    }
+        
+}
+
+// let btScrollUp = document.querySelector('#btScrollUp');
+// btScrollUp.addEventListener('click', scrollUp);

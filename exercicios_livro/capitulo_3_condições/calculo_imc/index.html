@@ -9,6 +9,10 @@
 <body>
     
     <style>
+
+        html {
+            scroll-behavior: smooth;
+        }
         
         input {
             display: block;
@@ -23,6 +27,33 @@
         input::-webkit-inner-spin-button {
         appearance: none;
         }
+        
+        .btScrollUp {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            width: 150px;
+            height: 50px;
+            border-radius: 50px;
+            background-color: #1877f2;
+            color: #fff;
+            text-transform: uppercase;
+            margin: 30px;
+            font-weight: bold;
+            border: 1px solid #000;
+            font-family: Arial, Helvetica, sans-serif;
+            cursor: pointer;
+
+        }
+
+        body {
+            height: 200vh;
+        }
+
+
 
     </style>
 
@@ -45,6 +76,10 @@
     </form>
 
     <h3 id="outResposta"></h3>
+
+    <div class="btScrollUp" onclick="scrollUp()" style="">
+        Rolar para cima
+    </div>
 
     <script src="script.js"></script>
 
